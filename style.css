@@ -1,0 +1,99 @@
+body {
+    font-family: Cambria, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee1e1;
+}
+
+header {
+    background-color: #5ba1c2;
+    color: rgb(4, 12, 5);
+    padding: 3px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 4px 0;
+    display: inline-block;
+}
+
+nav a {
+    margin: 0 1px;
+    font-size: larger;
+    color: rgba(243, 245, 248, 0.74);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 8px 0;
+    text-align: center;
+    
+}
+
+section {
+    padding: 10px;
+    padding-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(7, 14, 6, 0.1);
+    margin: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #c05e5e;
+}
+
+th, td {
+    padding: 7px;
+    text-align: left;
+}
+
+th {
+    background-color: #6082a7;
+    color: white;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
