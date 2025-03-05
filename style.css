@@ -41,6 +41,8 @@ h2 {
     color: #333;
     margin: 8px 0;
     text-align: center;
+    background: linear-gradient(3600deg, #e1a1a1, #f9f9f933);
+    border: solid;
     
 }
 
