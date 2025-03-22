@@ -15,8 +15,9 @@ header {
 nav {
     margin: 1px 0;
     display: inline-block;
-    background-color: #c05e5e;
+    background: linear-gradient(180deg, #76aa99d3, #d195e0d3);
 }
+
 ul{
     padding-left: 2px;
 
