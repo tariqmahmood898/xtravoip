@@ -2,20 +2,19 @@ body {
     font-family: Cambria, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #eee1e1;
 }
 
 header {
-   
-    background: linear-gradient(180deg, #82d8bbd3, #dfd264d3);
     padding: 3px 0;
     text-align: center;
+    background: linear-gradient(180deg, #82d8bbd3, #dfd264d3);
 }
 
 nav {
     margin: 1px 0;
     display: inline-block;
-    background: linear-gradient(180deg, #76aa99d3, #d195e0d3);
+    background-color: #c05e5e;
 }
 ul{
     padding-left: 2px;
