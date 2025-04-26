@@ -24,7 +24,7 @@ ul{
 }
 nav a {
     margin: 0 1px;
-    font-size: larger;
+    font-size: 12px;
     color: rgba(247, 246, 243, 0.932);
     text-decoration: none;
     font-weight: bold;
@@ -44,14 +44,14 @@ h1 {
 h2 {
     font-size: 20px;
     color: #333;
-    margin: 8px 0;
+    margin: 6px 0;
     text-align: center;
     
 }
 
 section {
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(7, 14, 6, 0.1);
