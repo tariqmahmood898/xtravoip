@@ -171,7 +171,7 @@ footer {
 
 .footer-social a {
   color: #f8f5f5;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   font-size: 1.1em;
 }
@@ -209,7 +209,7 @@ footer {
 
   nav ul li {
     text-align: center;
-    padding: 3px 0;
+    padding: 2px 0;
   }
 
   .service-cards {
@@ -218,11 +218,11 @@ footer {
 
     .footer-social a {
       color: #f8f5f5;
-      margin: 3px 10px;
+      margin: 3px 2px;
       text-decoration: none;
-      font-size: 0.80em;
+      font-size: 0.70em;
     }
   
     .footer-social a i {
-      margin-right: 3px; }
+      margin-right: 2px; }
 }
