@@ -1,23 +1,66 @@
+/* Reset & Base Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Cambria', sans-serif;
+  background: linear-gradient(60deg, #d8ddc2, #c57c37a2);
   color: #222;
 }
 
+.btn{
+  padding: 5px 15px;
+  background-color: #a1bd06;
+  color: white;
+  font-weight: 900;
+}
+
+/* Header */
 header {
-  background-color: #1a237e;
-  padding: 10px 40px;
+  background-color: #858cd1;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  position: relative;
   flex-wrap: wrap;
+  z-index: 1000;
 }
 
 header .logo {
   font-size: 1.5em;
   font-weight: bold;
+  color: white;
+  text-shadow:  #f32106e5 ;
+}
+
+/* Hamburger Toggle (Hidden by default) */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.nav-toggle-label span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Menu */
+nav {
+  flex-grow: 1;
 }
 
 nav ul {
@@ -26,21 +69,31 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: flex-end;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
 }
 
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Hero Section */
 .hero {
-  background: linear-gradient(to right, #283593, #1a237e);
+  background: linear-gradient(190deg, #eb9ce7c7, #25292cbb);
   color: white;
   padding: 80px 40px;
   text-align: center;
 }
 
+/* Section Styling */
 .section {
   padding: 60px 40px;
   max-width: 1000px;
@@ -48,35 +101,51 @@ nav ul li a {
 }
 
 .section.alt {
-  background-color: #eef3f9;
+  background-color: #f6f5f7bb;
 }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+/* Services */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
-.service-list {
-  list-style: none;
-  padding: 0;
+.service-card {
+  background: #c6d6e6a6;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.service-list li {
-  margin-bottom: 15px;
-  font-size: 1.1em;
+.service-card i {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 10px;
 }
 
-.service-list i {
-  margin-right: 10px;
-  color: #1a237e;
+.service-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Rates Table */
 .rates-table {
   width: 100%;
   border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(194, 10, 231, 0.438);
 }
 
-.rates-table th, .rates-table td {
+.rates-table th,
+.rates-table td {
   border: 1px solid #ccc;
   padding: 10px 15px;
   text-align: left;
@@ -87,6 +156,7 @@ h2 {
   color: white;
 }
 
+/* Footer */
 footer {
   background-color: #0d47a1;
   color: white;
@@ -100,7 +170,7 @@ footer {
 }
 
 .footer-social a {
-  color: #fff;
+  color: #f8f5f5;
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.1em;
@@ -115,49 +185,44 @@ footer {
   font-size: 0.9em;
 }
 
-/* 📱 Mobile styles */
-@media screen and (max-width: 767px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 15px;
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: flex;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
+    background: #666a8b;
+    width: 100%;
+    padding: 3px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    z-index: 1000;
   }
 
-  .hero {
-    padding: 60px 20px;
-  }
-
-  .section {
-    padding: 40px 20px;
-  }
-
-  h2 {
-    font-size: 1.6em;
-  }
-
-  .service-list li {
-    font-size: 1em;
-  }
-
-  .rates-table th, .rates-table td {
-    font-size: 0.9em;
-    padding: 8px;
-  }
-
-  .footer-social {
+  .nav-toggle:checked+.nav-toggle-label+nav ul {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
   }
 
-  .footer-copy {
-    font-size: 0.85em;
+  nav ul li {
+    text-align: center;
+    padding: 3px 0;
   }
+
+  .service-cards {
+    flex-direction: column;
+  }
+
+    .footer-social a {
+      color: #f8f5f5;
+      margin: 3px 10px;
+      text-decoration: none;
+      font-size: 0.80em;
+    }
+  
+    .footer-social a i {
+      margin-right: 3px; }
 }
