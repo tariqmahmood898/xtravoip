@@ -26,7 +26,7 @@ header {
 }
 
 header .logo {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   color: white;
   text-shadow:  #f32106e5 ;
@@ -94,7 +94,6 @@ nav ul li a:hover {
 }
 
 /* Section Styling */
-
 .section {
   padding: 60px 40px;
   max-width: 1000px;
@@ -116,7 +115,7 @@ nav ul li a:hover {
 .service-card {
   background: #c6d6e6a6;
   border-radius: 12px;
-  padding: 10px;
+  padding: 20px;
   flex: 1 1 220px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -125,7 +124,7 @@ nav ul li a:hover {
 .service-card i {
   font-size: 2rem;
   color: #007BFF;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .service-card h3 {
@@ -161,7 +160,7 @@ nav ul li a:hover {
 footer {
   background-color: #0d47a1;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 40px;
   text-align: center;
 }
 
@@ -172,19 +171,89 @@ footer {
 
 .footer-social a {
   color: #f8f5f5;
-  margin: 2px 6px;
+  margin: 0 15px;
   text-decoration: none;
   font-size: 1.1em;
 }
 
 .footer-social a i {
-  margin-right: 3px;
+  margin-right: 8px;
 }
 
 .footer-copy {
-  margin-top: 7px;
-  font-size: 0.8em;
+  margin-top: 10px;
+  font-size: 0.9em;
 }
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f3f1f1;
+  border-radius: 8px;
+  
+  padding: 10px 15px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.input-group i {
+  color: #007bff;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1em;
+  outline: none;
+}
+
+.input-group textarea {
+  resize: vertical;
+  height: 100px;
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  box-shadow: inset 0 0 10px rgba(155, 140, 140, 0.1);
+  padding: 10px; ;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.response-msg {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: green;
+}
+
 
 /* Responsive (Mobile) */
 @media (max-width: 768px) {
@@ -210,7 +279,7 @@ footer {
 
   nav ul li {
     text-align: center;
-    padding: 2px 0;
+    padding: 3px 0;
   }
 
   .service-cards {
@@ -219,11 +288,11 @@ footer {
 
     .footer-social a {
       color: #f8f5f5;
-      margin: 3px 2px;
+      margin: 3px 10px;
       text-decoration: none;
-      font-size: 0.70em;
+      font-size: 0.80em;
     }
   
     .footer-social a i {
-      margin-right: 2px; }
+      margin-right: 3px; }
 }
