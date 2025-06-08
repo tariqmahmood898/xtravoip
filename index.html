@@ -25,7 +25,7 @@
         <a href="#services">Services</a>
         <a href="#rates">Rate</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a></li>
+        <a href="#contactForm">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -114,32 +114,50 @@
       </thead>
       <tbody>
         <tr>
-          <td>🇪🇹 Ethiopia</td>
-          <td>$0.1200</td>
+          <td>Pakistan</td>
+          <td>$0.012</td>
         </tr>
         <tr>
-          <td>🇵🇰 Pakistan</td>
-          <td>$0.0420</td>
+          <td>India</td>
+          <td>$0.010</td>
         </tr>
         <tr>
-          <td>🇲🇲 Myanmar</td>
-          <td>$0.0060</td>
+          <td>Bangladesh</td>
+          <td>$0.013</td>
         </tr>
         <tr>
-          <td>🇮🇳 India</td>
-          <td>$0.0100</td>
-        </tr>
-        <tr>
-          <td>🇧🇩 Bangladesh</td>
-          <td>$0.0130</td>
-        </tr>
-        <tr>
-          <td>🇺🇸 USA</td>
-          <td>$0.0400</td>
+          <td>USA</td>
+          <td>$0.007</td>
         </tr>
       </tbody>
     </table>
   </section>
+
+  <form id="contactForm" class="contact-form">
+    <h2> </h2>
+    <div class="row-group">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="fullName" placeholder="Full Name" required />
+      </div>
+      <div class="input-group">
+        <i class="fab fa-telegram"></i>
+        <input type="text" id="telegramId" placeholder="Telegram ID (e.g. @username)" required />
+      </div>
+    </div>
+    
+    <div class="input-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" id="email" placeholder="Email Address" required />
+    </div>
+    <div class="input-group">
+      <i class="fas fa-comment-dots"></i>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+    <p id="responseMessage" class="response-msg"></p>
+  </form>
+  
 
   <footer>
     <div class="footer-container">
