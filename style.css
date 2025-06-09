@@ -299,7 +299,7 @@ footer {
 
 .row-group {
   display: flex;
-  gap: 4px;
+  gap: 2px;
   flex-wrap: wrap;
 }
 
@@ -310,23 +310,23 @@ footer {
   border-radius: 5px;
   padding: 4px 6px;
   flex: 1;
-  min-width: 120px;
+  min-width: 100px;
 }
 .input-group i {
   color: #007bff;
   margin-right: 5px;
-  font-size: 0.80em;
+  font-size: 0.70em;
 }
 
 .input-group input{
-width: 120px;
+width: 100px;
 }
 
 .input-group textarea {
   border: none;
   background: transparent;
   flex: 1;
-  font-size: 0.90em;
+  font-size: 0.80em;
   outline: none;
 }
 
