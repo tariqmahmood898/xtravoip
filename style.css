@@ -296,41 +296,6 @@ footer {
       margin-right: 3px; 
 }
 
-.row-group {
-  display: flex;
-  gap: 2px;
-  flex-wrap: wrap;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-  background: #f3f1f1;
-  border-radius: 5px;
-  padding: 4px 6px;
-  flex: 1;
-  min-width: 100px;
-}
-.input-group i {
-  color: #007bff;
-  margin-right: 5px;
-  font-size: 0.80em;
-}
-
-.input-group input{
-width: 100px;
-font-size: 70em;
-}
-
-.input-group textarea {
-  border: none;
-  background: transparent;
-  flex: 1;
-  font-size: 0.80em;
-  
-}
-
-
 
 
 
