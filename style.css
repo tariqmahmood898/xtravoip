@@ -313,7 +313,7 @@ footer {
   }
 
   .input-group {
-    min-width: 100px;
+    min-width: 80px;
     flex: 1 1 40%;
     padding: 4px 7px;
   }
