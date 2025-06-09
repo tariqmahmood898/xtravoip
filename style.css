@@ -299,7 +299,7 @@ footer {
 
 .row-group {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -310,7 +310,7 @@ footer {
   border-radius: 5px;
   padding: 5px 8px;
   flex: 1;
-  min-width: 150px;
+  min-width: 120px;
 }
 .input-group i {
   color: #007bff;
@@ -326,7 +326,7 @@ width: 120px;
   border: none;
   background: transparent;
   flex: 1;
-  font-size: 1em;
+  font-size: 0.90em;
   outline: none;
 }
 
