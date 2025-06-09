@@ -313,7 +313,23 @@ footer {
   flex: 1;
   min-width: 200px;
 }
+.input-group i {
+  color: #007bff;
+  margin-right: 5px;
+  font-size: 1.0em;
+}
 
+.input-group input{
+width: 120px;
+}
+
+.input-group textarea {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1em;
+  outline: none;
+}
 
 
 
