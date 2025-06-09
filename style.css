@@ -227,7 +227,7 @@ footer {
 .input-group textarea {
   resize: vertical;
   height: 100px;
-  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, serif;
   box-shadow: inset 0 0 10px rgba(155, 140, 140, 0.1);
   padding: 10px; ;
 }
@@ -330,12 +330,7 @@ font-size: 70em;
   
 }
 
-.contact-form {
-  margin: 2px;
-  display: flex;
-  flex-direction: column;
- 
-}
+
 
 
 
