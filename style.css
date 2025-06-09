@@ -303,7 +303,7 @@ footer {
 
 @media (max-width: 400px) {
   .contact-form {
-    padding: 10px;
+    padding: 6px;
   }
 
   .row-group {
@@ -314,8 +314,8 @@ footer {
 
   .input-group {
     min-width: unset;
-    flex: 1 1 48%;
-    padding: 8px 10px;
+    flex: 1 1 40%;
+    padding: 4px 7px;
   }
 
   .input-group i {
@@ -325,7 +325,7 @@ footer {
 
   .input-group input,
   .input-group textarea {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .input-group textarea {
@@ -334,7 +334,7 @@ footer {
   }
 
   .contact-form button {
-    padding: 10px;
-    font-size: 0.95em;
+    padding: 7px;
+    font-size: 0.80em;
   }
 }
