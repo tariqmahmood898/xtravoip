@@ -313,9 +313,9 @@ footer {
   }
 
   .input-group {
-    min-width: 80px;
+    min-width: 75px;
     flex: 1 1 40%;
-    padding: 4px 7px;
+    padding: 4px 6px;
   }
 
   .input-group i {
@@ -330,7 +330,7 @@ footer {
 
   .input-group textarea {
     height: 80px;
-    padding: 8px;
+    padding: 6px;
   }
 
   .contact-form button {
