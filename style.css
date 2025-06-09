@@ -301,7 +301,7 @@ footer {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .contact-form {
     padding: 6px;
   }
@@ -313,7 +313,7 @@ footer {
   }
 
   .input-group {
-    min-width: unset;
+    min-width: 100px;
     flex: 1 1 40%;
     padding: 4px 7px;
   }
