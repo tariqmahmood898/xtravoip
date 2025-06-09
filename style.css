@@ -303,7 +303,7 @@ footer {
 
 @media (max-width: 480px) {
   .contact-form {
-    padding: 6px;
+    padding: 10px;
   }
 
   .row-group {
