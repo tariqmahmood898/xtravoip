@@ -314,7 +314,7 @@ footer {
 .input-group i {
   color: #007bff;
   margin-right: 5px;
-  font-size: 0.65em;
+  font-size: 0.80em;
 }
 
 .input-group input{
@@ -327,11 +327,11 @@ font-size: 60em;
   background: transparent;
   flex: 1;
   font-size: 0.80em;
-  outline: none;
+  
 }
 
 .contact-form {
-  margin: auto;
+  margin: 2px;
   display: flex;
   flex-direction: column;
  
