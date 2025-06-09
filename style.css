@@ -300,3 +300,41 @@ footer {
 
 
 }
+
+@media (max-width: 400px) {
+  .contact-form {
+    padding: 10px;
+  }
+
+  .row-group {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-group {
+    min-width: unset;
+    flex: 1 1 48%;
+    padding: 8px 10px;
+  }
+
+  .input-group i {
+    font-size: 1em;
+    margin-right: 6px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 0.9em;
+  }
+
+  .input-group textarea {
+    height: 80px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+}
