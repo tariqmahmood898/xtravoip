@@ -294,5 +294,27 @@ footer {
     }
   
     .footer-social a i {
-      margin-right: 3px; }
+      margin-right: 3px; 
+}
+
+.row-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f3f1f1;
+  border-radius: 5px;
+  
+  padding: 7px 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+
+
+
 }
