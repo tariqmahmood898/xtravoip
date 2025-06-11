@@ -305,6 +305,7 @@ footer {
 @media (max-width: 520px) {
   .contact-form {
     padding: 12px;
+width: 100;
   }
 
   .row-group {
