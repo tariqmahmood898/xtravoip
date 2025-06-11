@@ -1,6 +1,6 @@
 /* Reset & Base Styles */
 body {
-  margin: 0;
+  margin: auto;
   font-family: 'Cambria', sans-serif;
   background: linear-gradient(60deg, #d8ddc2, #c57c37a2);
   color: #222;
@@ -302,7 +302,7 @@ footer {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .contact-form {
     padding: 12px;
   }
