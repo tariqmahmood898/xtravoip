@@ -297,12 +297,6 @@ footer {
       margin-right: 3px; 
 }
 
-
-
-
-}
-
-@media (max-width: 520px) {
   .contact-form {
     padding: 12px;
 width: 100;
@@ -340,4 +334,7 @@ width: 100;
     font-size: 0.80em;
 margin:auto;
   }
+
+
 }
+
