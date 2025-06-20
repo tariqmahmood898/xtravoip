@@ -1,21 +1,190 @@
 /* Reset & Base Styles */
 body {
-  margin: 0; /* Resetting margin */
+  margin: 0;
   font-family: 'Cambria', sans-serif;
   background: linear-gradient(60deg, #d8ddc2, #c57c37a2);
   color: #222;
-  width: 100vw; /* Ensuring body fits viewport */
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-.btn {
+.btn{
   padding: 5px 15px;
   background-color: #a1bd06;
   color: white;
   font-weight: 900;
 }
 
-/* Contact Form */
+/* Header */
+header {
+  background-color: #858cd1;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-shadow:  #f32106e5 ;
+}
+
+/* Hamburger Toggle (Hidden by default) */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.nav-toggle-label span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Menu */
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(190deg, #eb9ce7c7, #25292cbb);
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+/* Section Styling */
+.section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section.alt {
+  background-color: #f6f5f7bb;
+}
+
+/* Services */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-card {
+  background: #c6d6e6a6;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Rates Table */
+.rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(194, 10, 231, 0.438);
+}
+
+.rates-table th,
+.rates-table td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.rates-table th {
+  background-color: #1a237e;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #0d47a1;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-social a {
+  color: #f8f5f5;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-social a i {
+  margin-right: 8px;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
 .contact-form {
   max-width: 700px;
   margin: auto;
@@ -28,7 +197,6 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .input-group {
@@ -36,9 +204,10 @@ body {
   align-items: center;
   background: #f3f1f1;
   border-radius: 8px;
+  
   padding: 10px 15px;
-  flex: 1 1 45%; /* Adjusted for side-by-side layout */
-  min-width: 200px; /* Smaller width for side-by-side alignment */
+  flex: 1;
+  min-width: 250px;
 }
 
 .input-group i {
@@ -59,9 +228,9 @@ body {
 .input-group textarea {
   resize: vertical;
   height: 100px;
-  font-family: Cambria, serif;
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
   box-shadow: inset 0 0 10px rgba(155, 140, 140, 0.1);
-  padding: 10px;
+  padding: 10px; ;
 }
 
 .contact-form button {
@@ -79,42 +248,51 @@ body {
   background-color: #0056b3;
 }
 
+.response-msg {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: green;
+}
+
+
 /* Responsive (Mobile) */
 @media (max-width: 768px) {
-  .contact-form {
-    padding: 12px;
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: #666a8b;
     width: 100%;
+    padding: 3px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    z-index: 1000;
   }
 
-  .row-group {
-    flex-direction: column; /* Stack inputs vertically on smaller screens */
-    gap: 10px; /* Reduce gap for smaller screens */
+  .nav-toggle:checked+.nav-toggle-label+nav ul {
+    display: flex;
   }
 
-  .input-group {
-    flex: 1 1 100%; /* Full width inputs on mobile */
-    min-width: auto; /* Remove fixed width for smaller screens */
-    padding: 8px 10px; /* Adjust padding */
+  nav ul li {
+    text-align: center;
+    padding: 3px 0;
   }
 
-  .input-group i {
-    font-size: 1em;
-    margin-right: 6px;
+  .service-cards {
+    flex-direction: column;
   }
 
-  .input-group input,
-  .input-group textarea {
-    font-size: 0.9em; /* Smaller font-size for mobile */
-  }
-
-  .input-group textarea {
-    height: 80px;
-    padding: 6px;
-  }
-
-  .contact-form button {
-    padding: 10px;
-    font-size: 0.9em;
-    margin: auto;
-  }
+    .footer-social a {
+      color: #f8f5f5;
+      margin: 3px 10px;
+      text-decoration: none;
+      font-size: 0.80em;
+    }
+  
+    .footer-social a i {
+      margin-right: 3px; }
 }
