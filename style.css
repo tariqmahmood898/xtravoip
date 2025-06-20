@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Cambria', sans-serif;
-  background: linear-gradient(60deg, #d8ddc2, #c57c37a2);
+  background: linear-gradient(60deg, #d8ddc2, #f3a357a2);
   color: #222;
 }
 
@@ -87,10 +87,11 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(190deg, #eb9ce7c7, #25292cbb);
+  background: linear-gradient(180deg, #e071db88, rgb(56, 112, 56), #c55b64da);
   color: white;
   padding: 80px 40px;
   text-align: center;
+  margin: 10px 10px;
 }
 
 /* Section Styling */
@@ -203,11 +204,12 @@ footer {
   display: flex;
   align-items: center;
   background: #f3f1f1;
-  border-radius: 8px;
-  
-  padding: 10px 15px;
+  border-radius: 5px; 
+  padding: 8px 5px;
+  margin: 5px 3px;
+  box-shadow: 1px 8px 10px rgb(163 19 181 / 24%);
   flex: 1;
-  min-width: 250px;
+  min-width: 160px;
 }
 
 .input-group i {
