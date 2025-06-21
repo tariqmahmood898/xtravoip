@@ -320,7 +320,7 @@ width: 100;
   align-items: center;
   background: #f3f1f1;
   border-radius: 2px; 
-  padding: 8px 1px;
+  padding: 8px 3px;
   margin: 5px 3px;
   box-shadow: 1px 8px 10px rgb(163 19 181 / 24%);
   flex: 1;
@@ -335,6 +335,7 @@ width: 100;
 
 .input-group input{
 width: 130px;
+}
 .input-group textarea {
   border: none;
   background: transparent;
@@ -354,7 +355,7 @@ width: 130px;
 .contact-form button {
   background-color: #007bff;
   color: white;
-  padding: 10px;
+  margin: auto;
   font-size: 1em;
   border: none;
   border-radius: 8px;
