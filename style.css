@@ -304,12 +304,12 @@ footer {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 
 .row-group {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
@@ -317,8 +317,8 @@ footer {
   display: flex;
   align-items: center;
   background: #f3f1f1;
-  border-radius: 5px; 
-  padding: 8px 3px;
+  border-radius: 2px; 
+  padding: 8px 1px;
   margin: 5px 3px;
   box-shadow: 1px 8px 10px rgb(163 19 181 / 24%);
   flex: 1;
