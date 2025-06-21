@@ -297,4 +297,77 @@ footer {
   
     .footer-social a i {
       margin-right: 3px; }
+
+
+.contact-form {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.row-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f3f1f1;
+  border-radius: 5px; 
+  padding: 8px 3px;
+  margin: 5px 3px;
+  box-shadow: 1px 8px 10px rgb(163 19 181 / 24%);
+  flex: 1;
+  min-width: 120px;
+}
+
+.input-group i {
+  color: #007bff;
+  margin-right: 10px;
+  font-size: 1.0em;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 0.8em;
+  outline: none;
+}
+
+.input-group textarea {
+  resize: vertical;
+  height: 100px;
+  font-family: Cambria;
+  box-shadow: inset 0 0 10px rgba(155, 140, 140, 0.1);
+  padding: 5px; ;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.response-msg {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: green;
+}
+
+
 }
