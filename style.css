@@ -1,9 +1,10 @@
 /* Reset & Base Styles */
 body {
   margin: 0;
-  font-family: 'Cambria', sans-serif;
+  font-family: 'Cambria';
   background: linear-gradient(60deg, #d8ddc2, #f3a357a2);
   color: #222;
+width: 100%;
 }
 
 .btn{
@@ -332,7 +333,8 @@ width: 100;
   font-size: 1.0em;
 }
 
-.input-group input,
+.input-group input{
+width: 130px;
 .input-group textarea {
   border: none;
   background: transparent;
