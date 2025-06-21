@@ -261,12 +261,13 @@ footer {
 @media (max-width: 768px) {
   .nav-toggle-label {
     display: flex;
+width: 100;
   }
 
   nav ul {
     flex-direction: column;
     background: #666a8b;
-    width: 100%;
+    width: 99%;
     padding: 3px 0;
     position: absolute;
     top: 60px;
