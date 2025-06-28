@@ -303,8 +303,8 @@ width: 100;
 
 .contact-form {
   max-width: 100%;
-padding-left: 4px;
-padding-right: 4px;
+padding-left: 7px;
+padding-right: 7px;
   margin: auto;
   display: flex;
   flex-direction: column;
